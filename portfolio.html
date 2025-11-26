@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Hamza Muhammed</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <div class="container nav">
+      <a class="logo" href="index.html">Hamza muhammed<span>.</span></a>
+      <nav class="nav-links" id="navLinks4">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="navToggle4" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container page">
+    <h1>Selected Works</h1>
+
+    <div class="gallery">
+      <!-- repeat these cards for each project -->
+      <div class="gallery-item" tabindex="0" data-img="assets/images/portfolio-1.jpg" data-title="Branding — Coffee">
+        <img src="assets/images/portfolio-1.jpg" alt="Project 1">
+        <div class="gallery-meta">
+          <h4>Coffee Brand</h4>
+          <p>Branding & packaging</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" tabindex="0" data-img="assets/images/portfolio-2.jpg" data-title="Packaging — Snack">
+        <img src="assets/images/portfolio-2.jpg" alt="Project 2">
+        <div class="gallery-meta">
+          <h4>Snack Packaging</h4>
+          <p>Concept & dielines</p>
+        </div>
+      </div>
+
+      <!-- add more -->
+    </div>
+  </main>
+
+  <!-- Modal for preview -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+      <img id="modalImg" src="" alt="">
+      <h3 id="modalTitle"></h3>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year4"></span> Hamza Muhammed</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
